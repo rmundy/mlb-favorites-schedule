@@ -1,1 +1,5 @@
-export interface Venue {}
+export interface Venue {
+    id: number;
+    name: string;
+    link: string;
+}

@@ -1,7 +1,8 @@
-import { IsInt, IsString } from 'class-validator';
+import { IsInt, IsString, validate } from 'class-validator';
+import { Date } from 'src/interfaces/date.interface';
 
 export class ScheduleDto {
-  @IsString()
+  @IsInt()
   copyright: string;
 
   @IsInt()
@@ -16,5 +17,5 @@ export class ScheduleDto {
   @IsInt()
   totalGamesInProgress: number;
 
-  dates: [];
+  dates: Date[];
 }
