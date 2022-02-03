@@ -1,1 +1,5 @@
-export interface LeagueRecord {}
+export interface LeagueRecord {
+    wins: number;
+    losses: number;
+    pct: string;
+}

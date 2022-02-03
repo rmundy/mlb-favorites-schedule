@@ -20,25 +20,6 @@ export class SchedulesService {
     );
   }
 
-  toDTO(schedule: Schedule): ScheduleDto {
-    const scheduleDto = new ScheduleDto();
-
-    scheduleDto.copyright = schedule.copyright;
-    scheduleDto.totalItems = schedule.totalItems;
-    scheduleDto.totalGames = schedule.totalGames;
-    scheduleDto.totalEvents = schedule.totalEvents;
-    scheduleDto.totalGamesInProgress = schedule.totalGamesInProgress;
-    scheduleDto.dates = schedule.dates;
-
-    validateOrReject(scheduleDto).catch((errors) => {
-      return {
-        error: `Promise rejected (validation failed). Errors: ${errors}`
-      };
-    });
-
-    return scheduleDto;
-  }
-
   reSort(schedule: Schedule, teamId: string): Schedule {
     if (!schedule || !teamId) {
       return schedule;
