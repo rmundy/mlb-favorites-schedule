@@ -1,1 +1,3 @@
-export interface Content {}
+export interface Content {
+    link: string;
+}

@@ -7,5 +7,5 @@ export interface Away {
     team: Team;
     isWinner: boolean;
     splitSquad: boolean;
-    seriesNumber: 2
+    seriesNumber: number;
 }
