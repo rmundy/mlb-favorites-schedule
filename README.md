@@ -1,3 +1,5 @@
+**MLB Take Home Assignment**
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -40,11 +42,7 @@ $ npm install
 # development
 $ npm run start
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+Sample curl: curl -X GET "http://localhost:3000/schedule?teamId=120&date=2021-04-07&sportId=1&language=en" 
 ```
 
 ## Test
